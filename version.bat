@@ -3,6 +3,13 @@
 set homdir=%CD%
 
 REM ####################################################
+REM Get into the Files directory
+REM ####################################################
+cd %homedir%
+cd ..
+cd Files
+
+REM ####################################################
 REM If the version file doesnt exist, create it
 REM ####################################################
 IF NOT EXIST version.txt echo 0.0 > version.txt
